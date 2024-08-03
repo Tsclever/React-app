@@ -36,3 +36,20 @@ export default todoList
 </React.Fragment> 
 */
 
+// 其实还有更进一步的方法，Fragment 还支持短语法，这个一看就会，直接看代码：
+// 短语法唯一的缺点==是不支持 key
+/* 
+  <>
+    <h1>Hedy Lamarr's Todos</h1>
+    <img 
+      src="https://i.imgur.com/yXOvdOSs.jpg" 
+      alt="Hedy Lamarr" 
+      class="photo"
+    >
+    <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve the spectrum technology</li>
+    </ul>
+  </>
+*/

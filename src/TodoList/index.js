@@ -1,4 +1,13 @@
-function todoList() {
+function formatDate(date) {
+  return new Intl.DateTimeFormat(
+    'en-US',
+    { weekday: 'long'}
+  ).format(date);
+}
+
+function TodoList() {
+  const today = new Date();
+
   return (
     <div>
       <h1>Skiing makes me happy</h1>
@@ -7,6 +16,7 @@ function todoList() {
       alt="滑雪" 
       className="photo"
       />
+      <h1>今天是 {formatDate(today)}</h1>
       <ul>
         <li>Let's go skiing</li>
         <li>Go, go, go, go</li>
@@ -16,7 +26,7 @@ function todoList() {
   )
 }
 
-export default todoList
+export default TodoList
 
 // 使用 `<div> ... </div>` 的形式有一个缺点，就是最终展示在用户面请的页面就多了这么一层  `<div>` 嵌套。
 // 如果我不想向 DOM 添加额外的节点或者层次的话，应该怎么做呢？ React 提供的解决方案被称为Fragments （直译为碎片）

@@ -5,6 +5,7 @@ import './index.css';
 import Hw from './Hw'  // import 引入, Hw 命名, './Hw' 实际文件地址
 import Photo from './MyFirstComponent'
 import List from './TodoList'
+import Avatar from './Avatar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
     <Photo />
     <Photo />
     <List />
+    <Avatar />
     {/* <App /> */}
   </React.StrictMode>
 );

@@ -7,8 +7,9 @@ import './index.css';
 // import Avatar from './Avatar';
 // import Profile from './MyFirstComponent'
 // import Card from './Card'
-import Item from './Item'
-import PackingList from './PackingList';
+// import Item from './Item'
+// import PackingList from './PackingList';
+import List from './List';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,19 +17,7 @@ root.render(
   // 挂载在页面 id 叫 root 的元素上
   <React.StrictMode>   
     {/* 显示Hw组件 */}
-    <PackingList>
-      <Item 
-        isPacked = { true }
-        name = "one"
-      />
-      <Item 
-        name = "two"
-      />
-      <Item 
-        isPacked = { true }
-        name = "three"
-      />
-    </PackingList>
+    <List />
     {/* <App /> */}
   </React.StrictMode>
 );

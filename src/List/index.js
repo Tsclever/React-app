@@ -11,6 +11,8 @@ function List() {
     <li>{person}</li>
   );
 
+  console.log(listItems)
+
   // console.log(listItems);
 
   return <ul>{listItems}</ul>;

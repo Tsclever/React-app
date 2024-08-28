@@ -18,7 +18,12 @@ root.render(
   // 挂载在页面 id 叫 root 的元素上
   <React.StrictMode>   
     {/* 显示Hw组件 */}
-    <Button />
+    <Button message="Playing!">
+      Play Movie
+    </Button>
+    <Button message="Uploading!">
+      Upload Image
+    </Button>
     {/* <App /> */}
   </React.StrictMode>
 );

@@ -9,7 +9,8 @@ import './index.css';
 // import Card from './Card'
 // import Item from './Item'
 // import PackingList from './PackingList';
-import List from './List';
+// import List from './List';
+import Button from './Button';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +18,7 @@ root.render(
   // 挂载在页面 id 叫 root 的元素上
   <React.StrictMode>   
     {/* 显示Hw组件 */}
-    <List />
+    <Button />
     {/* <App /> */}
   </React.StrictMode>
 );

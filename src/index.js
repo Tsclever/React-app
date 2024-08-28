@@ -10,7 +10,9 @@ import './index.css';
 // import Item from './Item'
 // import PackingList from './PackingList';
 // import List from './List';
-import Button from './Button';
+// import Button from './Button';
+import PlayButton from './PlayButton';
+import UploadButton from './UploadButton';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,12 +20,8 @@ root.render(
   // 挂载在页面 id 叫 root 的元素上
   <React.StrictMode>   
     {/* 显示Hw组件 */}
-    <Button message="Playing!">
-      Play Movie
-    </Button>
-    <Button message="Uploading!">
-      Upload Image
-    </Button>
+    <PlayButton movieName={"kiki's Delivert Service"} />
+    <UploadButton />
     {/* <App /> */}
   </React.StrictMode>
 );
